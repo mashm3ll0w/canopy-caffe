@@ -1,9 +1,11 @@
 {
-    "menu": [
+    "inventory": [
         {
             "id": "1",
             "name": "Cappuccino",
             "type": "Coffee",
+            "price": 350,
+            "size": "large",
             "description": "A Cappuccino a day keeps grumpy away!",
             "poster_url": "https://photos.google.com/photo/AF1QipMSmHeaAD1e5Wk9c_kigdIfafQNBRMSqYQAIUZ0Y"
         },
@@ -11,6 +13,8 @@
             "id": "2",
             "name": "Espresso",
             "type": "Coffee",
+            "price": 250,
+            "size": "small",
             "description": "More Espressoo Less Depresso",
             "poster_url": "https://photos.google.com/photo/AF1QipNA9F0h0gPrqp-o0UF24IMKYn4ThvEg7jQLgS68a"
         },
@@ -18,6 +22,8 @@
             "id": "3",
             "name": "Kenyan Tea",
             "type": "Tea",
+            "price": 250,
+            "size": "medium",
             "description": "Karibu Chai!",
             "poster_url": "https://photos.google.com/photo/AF1QipN1g1ASCqMhXgcOvC6iYq1tXKRxFxE2npQT0i2N9"
         },
@@ -26,6 +32,8 @@
             "id": "4",
             "name": "Macha",
             "type": "Tea",
+            "price": 300,
+            "size": "medium",
             "description": "You mean so Macha to me!",
             "poster_url": "https://photos.google.com/photo/AF1QipP6dmcB7Py6xVuwFhWUn6508nqRoooctcUjP9UA"
         },
@@ -34,6 +42,8 @@
             "id": "5",
             "name": "Orange",
             "type": "Juice",
+            "price": 350,
+            "size": "medium",
             "description": "Squeeze out that creative juice!",
             "poster_url": "https://photos.google.com/photo/AF1QipOf1W6bSonZ8Q312If15TNVEEUPGUItt-l42laN"
         },
@@ -42,6 +52,8 @@
             "id": "6",
             "name": "Mango",
             "type": "Juice",
+            "price": 350,
+            "size": "medium",
             "description": "The Juice is worth the squeeze!",
             "poster_url": "https://photos.google.com/photo/AF1QipMu0YA0nRRyPGV_xAzvWenWwo7o5VjRAFv5sH4a"
         },
@@ -50,6 +62,8 @@
             "id": "7",
             "name": "Chocolate Delight",
             "type": "Milkshake",
+            "price": 450,
+            "size": "large",
             "description": "A little too much chocolate is just about right!",
             "poster_url": "https://photos.google.com/photo/AF1QipMbghluKjdUNPxTZHRLVaAnjHTsY-M7b1O9HUqE"
         },
@@ -58,6 +72,8 @@
             "id": "8",
             "name": "Vanilla",
             "type": "Milkshake",
+            "price": 450,
+            "size": "large",
             "description": "Milk shake it up!",
             "poster_url": "https://photos.google.com/photo/AF1QipOZzdPTun4UeJHbIo8stkHuFXRxUsUPi47shTFl"
         },
@@ -66,6 +82,8 @@
             "id": "9",
             "name": "Puff Pastry",
             "type": "Pastry",
+            "price": 300,
+            "size": "small",
             "description": "Life is better with freshly baked goods!",
             "poster_url": "https://photos.google.com/photo/AF1QipNoY6-Z20P7IJ0AB2SOluHM9Jv5UCm17y7krwq7N"
         }
