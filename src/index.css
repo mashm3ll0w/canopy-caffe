@@ -1,13 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-image: url("../public/background.jpg");
+	background-color: #110a06;
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* NavBar */
+.nav-container {
+	padding: 0 70px;
+}
+.navbar-brand {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.nav-link {
+	font-weight: 200;
+	font-size: 20px;
+}
+
+.navbar-brand,
+.nav-link {
+	color: #ffff;
+	/* font-size: 30px; */
+	margin: 30px 15px;
+}
+
+.navbar-brand:hover,
+.nav-link:hover,
+.navbar-brand:visited,
+.nav-link:visited {
+	color: #ffff !important;
+}
+
+/* Hero Content */
+#header{
+  margin: 200px 0 0 77px;
+  width: 40%;
+}
+
+.hero-heading {
+	font-weight: bold;
+	font-size: 80px;
+}
+
+.tagline{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.tag-inventory{
+  width: 55%;
+  line-height: 1.75;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+/* .home-buttons > button {
+  font-weight: bold;
+} */
+
+.btn-custom {
+  font-weight: bold;
+  background-color: #DDA15E;
+  color: #ffff;
+}
+
+.btn-custom:hover {
+  background-color: #BC6C25
+  ;
 }
