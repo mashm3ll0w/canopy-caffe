@@ -1,184 +1,91 @@
 {
-	"inventory": [
-		{
-			"id": 1,
-			"name": "Rick Sanchez",
-			"description": "Alive",
-			"type": "Human",
-			"price": 654,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-		},
-		{
-			"id": 2,
-			"name": "Morty Smith",
-			"description": "Alive",
-			"type": "Human",
-			"price": 213,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
-		},
-		{
-			"id": 3,
-			"name": "Summer Smith",
-			"description": "Alive",
-			"type": "Human",
-			"price": 123,
-			"size": "Female",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/3.jpeg"
-		},
-		{
-			"id": 4,
-			"name": "Beth Smith",
-			"description": "Alive",
-			"type": "Human",
-			"price": 875,
-			"size": "Female",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/4.jpeg"
-		},
-		{
-			"id": 5,
-			"name": "Jerry Smith",
-			"description": "Alive",
-			"type": "Human",
-			"price": 577,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/5.jpeg"
-			},
-		{
-			"id": 6,
-			"name": "Abadango Cluster Princess",
-			"description": "Alive",
-			"type": "Alien",
-			"price": 57,
-			"size": "Female",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/6.jpeg"
-		},
-		{
-			"id": 7,
-			"name": "Abradolf Lincler",
-			"description": "unknown",
-			"type": "Human",
-			"price": 64,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/7.jpeg"
-			},
-		{
-			"id": 8,
-			"name": "Adjudicator Rick",
-			"description": "Dead",
-			"type": "Human",
-			"price": 143,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/8.jpeg"
-    },
-		{
-			"id": 9,
-			"name": "Agency Director",
-			"description": "Dead",
-			"type": "Human",
-			"price": 64,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/9.jpeg"
-			},
-		{
-			"id": 10,
-			"name": "Alan Rails",
-			"description": "Dead",
-			"type": "Human",
-			"price": 14,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/10.jpeg"
-			},
-		{
-			"id": 11,
-			"name": "Albert Einstein",
-			"description": "Dead",
-			"type": "Human",
-			"price": 77,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/11.jpeg"
-			},
-		{
-			"id": 12,
-			"name": "Alexander",
-			"description": "Dead",
-			"type": "Human",
-			"price": 21,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/12.jpeg"
-			},
-		{
-			"id": 13,
-			"name": "Alien Googah",
-			"description": "unknown",
-			"type": "Alien",
-			"price": 98,
-			"size": "unknown",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/13.jpeg"
-			},
-		{
-			"id": 14,
-			"name": "Alien Morty",
-			"description": "unknown",
-			"type": "Alien",
-			"price": 15,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/14.jpeg"
-			},
-		{
-			"id": 15,
-			"name": "Alien Rick",
-			"description": "unknown",
-			"type": "Alien",
-			"price": 8,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/15.jpeg"
-			},
-		{
-			"id": 16,
-			"name": "Amish Cyborg",
-			"description": "Dead",
-			"type": "Alien",
-			"price": 68,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/16.jpeg"
-			},
-		{
-			"id": 17,
-			"name": "Annie",
-			"description": "Alive",
-			"type": "Human",
-			"price": 96,
-			"size": "Female",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/17.jpeg"
-		},
-		{
-			"id": 18,
-			"name": "Antenna Morty",
-			"description": "Alive",
-			"type": "Human",
-			"price": 47,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/18.jpeg"
-		},
-		{
-			"id": 19,
-			"name": "Antenna Rick",
-			"description": "unknown",
-			"type": "Human",
-			"price": 65,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/19.jpeg"
-		},
-		{
-			"id": 20,
-			"name": "Ants in my Eyes Johnson",
-			"description": "unknown",
-			"type": "Human",
-			"price": 56,
-			"size": "Male",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/20.jpeg"
-		}
-	]
+    "inventory": [
+        {
+            "id": "1",
+            "name": "Cappuccino",
+            "type": "Coffee",
+            "price": 350,
+            "size": "large",
+            "description": "A Cappuccino a day keeps grumpy away!",
+            "poster_url": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+        },
+        {
+            "id": "2",
+            "name": "Espresso",
+            "type": "Coffee",
+            "price": 250,
+            "size": "small",
+            "description": "More Espressoo Less Depresso",
+            "poster_url": "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+        },
+        {
+            "id": "3",
+            "name": "Kenyan Tea",
+            "type": "Tea",
+            "price": 250,
+            "size": "medium",
+            "description": "Karibu Chai!",
+            "poster_url": "https://rickandmortyapi.com/api/character/avatar/3.jpeg"     
+        },
+
+        {
+            "id": "4",
+            "name": "Macha",
+            "type": "Tea",
+            "price": 300,
+            "size": "medium",
+            "description": "You mean so Macha to me!",
+            "poster_url": "https://rickandmortyapi.com/api/character/avatar/4.jpeg"
+        },
+
+        {
+            "id": "5",
+            "name": "Orange",
+            "type": "Juice",
+            "price": 350,
+            "size": "medium",
+            "description": "Squeeze out that creative juice!",
+            "poster_url": "https://rickandmortyapi.com/api/character/avatar/5.jpeg"
+        },
+
+        {
+            "id": "6",
+            "name": "Mango",
+            "type": "Juice",
+            "price": 350,
+            "size": "medium",
+            "description": "The Juice is worth the squeeze!",
+            "poster_url": "https://rickandmortyapi.com/api/character/avatar/6.jpeg"
+        },
+
+        {
+            "id": "7",
+            "name": "Chocolate Delight",
+            "type": "Milkshake",
+            "price": 450,
+            "size": "large",
+            "description": "A little too much chocolate is just about right!",
+            "poster_url": "https://rickandmortyapi.com/api/character/avatar/7.jpeg"
+        },
+
+        {
+            "id": "8",
+            "name": "Vanilla",
+            "type": "Milkshake",
+            "price": 450,
+            "size": "large",
+            "description": "Milk shake it up!",
+            "poster_url": "https://rickandmortyapi.com/api/character/avatar/8.jpeg"
+        },
+
+        {
+            "id": "9",
+            "name": "Puff Pastry",
+            "type": "Pastry",
+            "price": 300,
+            "size": "small",
+            "description": "Life is better with freshly baked goods!",
+            "poster_url": "https://rickandmortyapi.com/api/character/avatar/9.jpeg"
+        }
+    ]
 }
