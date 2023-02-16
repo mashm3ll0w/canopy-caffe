@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 
-export default function CafeItemSpec({onDeleteItem}) {
+export default function CafeItemSpec({onAddToCart, onDeleteItem}) {
 	const [item, setItem] = useState([]);
 	const { id } = useParams();
   const navigate = useNavigate()
@@ -25,6 +25,11 @@ export default function CafeItemSpec({onDeleteItem}) {
     })
   }
 
+  function handleBuy(){
+    onAddToCart(item)
+    navigate("/cart")
+  }
+
 	return (
 		<div className="menu-container container-fluid">
 			<div className="card" style={{ width: "25rem" }}>
@@ -40,7 +45,7 @@ export default function CafeItemSpec({onDeleteItem}) {
             <li></li>
 					</ul>
 					<div className="spec-buttons">
-						<button className="btn btn-primary" onClick={() => console.log("Buy Button")}>
+						<button className="btn btn-primary" onClick={handleBuy}>
 							Buy
 						</button>
 						<button className="btn btn-danger" onClick={handleDelete}>

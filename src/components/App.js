@@ -10,6 +10,7 @@ import Cart from "./Cart";
 
 function App() {
 	const [menu, setMenu] = useState([]);
+	const [cart, setCart] = useState([]);
 
 	useEffect(() => {
 		fetch("http://localhost:4000/inventory")
@@ -23,14 +24,23 @@ function App() {
 		setMenu(updatedMenu);
 	}
 
+	function onAddToCart(toAdd) {
+		setCart([...cart, toAdd]);
+	}
+
+	function onRemoveFromCart(removed) {
+		const updatedCart = cart.filter((item) => item.id !== removed.id);
+		setCart(updatedCart);
+	}
+
 	return (
 		<div>
 			<NavBar />
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/menu" element={<CafeMenu menu={menu} />} />
-				<Route path="/menu/:id" element={<CafeItemSpec onDeleteItem={onDeleteItem} />} />
-				<Route path="/cart" element={<Cart />} />
+				<Route path="/menu/:id" element={<CafeItemSpec onAddToCart={onAddToCart} onDeleteItem={onDeleteItem} />} />
+				<Route path="/cart" element={<Cart cart={cart} onRemoveFromCart={onRemoveFromCart} />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contacts" element={<Contact />} />
 			</Routes>
