@@ -1,37 +1,40 @@
+import { NavLink } from "react-router-dom";
+
+
 export default function NavBar() {
 	return (
 		<div id="site-navbar">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container-fluid nav-container">
-					<a class="navbar-brand" href="/">
+			<nav className="navbar navbar-expand-lg">
+				<div className="container-fluid nav-container">
+					<p className="navbar-brand">
 						Canopy.CAFFE
-					</a>
-					<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="/">
+					</p>
+					<div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+						<ul className="navbar-nav">
+							<li className="nav-item">
+								<NavLink className="nav-link" to="/">
 									Home
-								</a>
+								</NavLink>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/menu">
+							<li className="nav-item">
+								<NavLink className="nav-link" to="/menu">
 									Menu
-								</a>
+								</NavLink>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/cart">
-									Cart
-								</a>
+							<li className="nav-item">
+								<NavLink className="nav-link" to="/cart">
+                  Cart
+								</NavLink>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/about">
+							<li className="nav-item">
+								<NavLink className="nav-link" to="/about">
 									About Us
-								</a>
+								</NavLink>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/contacts">
+							<li className="nav-item">
+								<NavLink className="nav-link" to="/contacts">
 									Contacts
-								</a>
+								</NavLink>
 							</li>
 						</ul>
 					</div>
