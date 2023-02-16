@@ -2,6 +2,7 @@ import React from "react";
 import {Routes, Route} from "react-router-dom"
 import Homepage from "./Homepage"
 import About from "./About";
+import Contact from "./Contact";
 
 function App() {
 	return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />}/>
         <Route path="/about" element={<About />}/>
+        <Route path="/contacts" element={<Contact />}/>
       </Routes>
 		</div>
 	);

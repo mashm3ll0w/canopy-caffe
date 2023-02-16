@@ -42,12 +42,12 @@ body {
 }
 
 /* Hero Content */
-#header{
+#header, #about, #contact{
   margin: 200px 0 0 77px;
   width: 40%;
 }
 
-.hero-heading {
+.hero-heading, .hero-about, .hero-contact {
 	font-weight: bold;
 	font-size: 80px;
 }
@@ -84,21 +84,6 @@ body {
   ;
 }
 
-/* About Section */
-
-#about {
-  text-align: center;
-  margin: 100px auto;
-}
-
-#about > h1 {
-  font-size: 100px;
-}
-
-#about > p {
-  font-size: 18px;
-}
-
 /* Active class when a link is clicked */
 .active {
   background-color: #DDA15E;
@@ -106,4 +91,13 @@ body {
   border-radius: 3px;
   padding: 2px 16px;
   margin-top: 35px;
+}
+
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 40px;
 }
