@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
-export default function CafeItemSpec() {
+export default function CafeItemSpec({onDeleteItem}) {
 	const [item, setItem] = useState([]);
 	const { id } = useParams();
+  const navigate = useNavigate()
 
 	useEffect(() => {
 		fetch(`http://localhost:4000/inventory/${id}`)
@@ -11,6 +12,18 @@ export default function CafeItemSpec() {
 			.then((data) => setItem(data))
 			.catch((err) => console.log("Error: ", err.message));
 	}, [id]);
+
+
+  function handleDelete(){
+    fetch(`http://localhost:4000/inventory/${item.id}`, {
+      method: "DELETE"
+    })
+    .then(res => res.json())
+    .then(() => {
+      onDeleteItem(item)
+      navigate("/menu")
+    })
+  }
 
 	return (
 		<div className="menu-container container-fluid">
@@ -30,7 +43,7 @@ export default function CafeItemSpec() {
 						<button className="btn btn-primary" onClick={() => console.log("Buy Button")}>
 							Buy
 						</button>
-						<button className="btn btn-danger" onClick={() => console.log("Delete Button")}>
+						<button className="btn btn-danger" onClick={handleDelete}>
 							Delete
 						</button>
             <Link className="btn btn-info" to="/menu">Back</Link>
