@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 
 export default function Cart({ cart, onRemoveFromCart }) {
-
-  function handleRemove(item) {
-    // console.log(item)
+	function handleRemove(item) {
 		onRemoveFromCart(item);
 	}
+
+	const totalPrice = cart.reduce((acc, item) => {
+		acc += item.price;
+		return acc;
+	}, 0);
 
 	const cartItems = cart.map((item) => {
 		return (
@@ -22,7 +25,9 @@ export default function Cart({ cart, onRemoveFromCart }) {
 						<li></li>
 					</ul>
 					<div className="spec-buttons">
-						<button className="btn btn-danger" onClick={() => handleRemove(item)}>Remove</button>
+						<button className="btn btn-danger" onClick={() => handleRemove(item)}>
+							Remove
+						</button>
 						<Link className="btn btn-info" to="/menu">
 							Main Menu
 						</Link>
@@ -33,7 +38,14 @@ export default function Cart({ cart, onRemoveFromCart }) {
 	});
 	return (
 		<>
-			{cart.length !== 0 ? <h1 style={{textAlign: "center"}}>Items in your Cart: {cart.length}</h1> : <h1 style={{textAlign: "center"}}>Buy Something!</h1>}
+			{cart.length !== 0 ? (
+				<>
+					<h1 style={{ textAlign: "center" }}>Items in your Cart: {cart.length}</h1>
+					<h1 style={{ textAlign: "center" }}>Total Price: KES. {totalPrice}</h1>
+				</>
+			) : (
+				<h1 style={{ textAlign: "center" }}>Buy Something!</h1>
+			)}
 			<div className="menu-container container-fluid">{cartItems}</div>
 		</>
 	);
