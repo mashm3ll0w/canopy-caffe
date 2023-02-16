@@ -107,8 +107,25 @@ body {
 .menu-container {
   background-color: #DDA15E;
   width: 91%;
-  height: 800px;
+  height: auto;
   margin: 10px auto;
   border-radius: 10px;
   opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.card-title {
+  color: #000;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card {
+  margin: 15px 0;
 }

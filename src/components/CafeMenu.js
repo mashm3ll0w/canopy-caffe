@@ -1,6 +1,6 @@
 export default function CafeMenu() {
 	return (
-		<div className="menu-container">
+		<div className="menu-container container-fluid">
     {/* this is where you'll render all the menu items */}
 		</div>
 	);
