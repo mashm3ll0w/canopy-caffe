@@ -129,3 +129,8 @@ body {
 .card {
   margin: 15px 0;
 }
+
+.spec-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
