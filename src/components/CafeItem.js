@@ -1,9 +1,9 @@
-export default function CafeItem() {
+export default function CafeItem({item}) {
 	return (
 		<div class="card" style={{ width: "18rem" }}>
-			<img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" class="card-img-top" alt="..." />
+			<img src={item.poster_url} class="card-img-top" alt={item.name} />
 			<div class="card-body">
-				<h5 class="card-title">FOOD TITLE</h5>
+				<h5 class="card-title">{item.name}</h5>
 				<a href="/menu" class="btn btn-primary">
 					Order
 				</a>
