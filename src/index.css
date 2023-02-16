@@ -83,3 +83,18 @@ body {
   background-color: #BC6C25
   ;
 }
+
+/* About Section */
+
+#about {
+  text-align: center;
+  margin: 100px auto;
+}
+
+#about > h1 {
+  font-size: 100px;
+}
+
+#about > p {
+  font-size: 18px;
+}
