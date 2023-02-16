@@ -5,7 +5,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-image: url("../public/background.jpg");
+	background-image: url("./assets/background.jpg");
 	background-color: #110a06;
 	/* background-position: center; */
 	background-repeat: no-repeat;
