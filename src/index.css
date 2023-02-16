@@ -101,3 +101,14 @@ body {
   justify-content: flex-start;
   gap: 40px;
 }
+
+/* Menu-container */
+
+.menu-container {
+  background-color: #DDA15E;
+  width: 91%;
+  height: 800px;
+  margin: 10px auto;
+  border-radius: 10px;
+  opacity: 0.8;
+}
