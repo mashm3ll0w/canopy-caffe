@@ -35,7 +35,7 @@ function App() {
 
 	return (
 		<div>
-			<NavBar />
+			<NavBar itemsInCart={cart.length}/>
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/menu" element={<CafeMenu menu={menu} />} />
