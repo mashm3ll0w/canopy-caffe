@@ -23,7 +23,7 @@ export default function NavBar({itemsInCart}) {
 							</li>
 							<li className="nav-item">
 								<NavLink className="nav-link" to="/cart">
-                  Cart<sup>{itemsInCart}</sup>
+                  Cart{itemsInCart ? <sup>{itemsInCart}</sup> : null}
 								</NavLink>
 							</li>
 							<li className="nav-item">
