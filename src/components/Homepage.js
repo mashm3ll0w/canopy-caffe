@@ -6,7 +6,7 @@ export default function Homepaage() {
 
   function handleClick(e){
     if(e.target.textContent === "EXPLORE"){
-      navigate("/cart")
+      navigate("/menu")
     }
     else{
       navigate("/about")
