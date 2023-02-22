@@ -11,6 +11,7 @@ import Cart from "./Cart";
 function App() {
 	const [menu, setMenu] = useState([]);
 	const [cart, setCart] = useState([]);
+	const [filter, setFilter] = useState("")
 
 	useEffect(() => {
 		fetch("http://localhost:4000/inventory")
@@ -32,13 +33,17 @@ function App() {
 		const updatedCart = cart.filter((item) => item.id !== removed.id);
 		setCart(updatedCart);
 	}
-
+	function handleSearch(event){
+		setFilter(event.target.value)
+		//console.log(event)
+	}
+ 
 	return (
 		<div>
 			<NavBar itemsInCart={cart.length}/>
 			<Routes>
 				<Route path="/" element={<Homepage />} />
-				<Route path="/menu" element={<CafeMenu menu={menu} />} />
+				<Route path="/menu" element={<CafeMenu menu={menu} filter={filter} handleSearch={handleSearch} />} />
 				<Route path="/menu/:id" element={<CafeItemSpec onAddToCart={onAddToCart} onDeleteItem={onDeleteItem} />} />
 				<Route path="/cart" element={<Cart cart={cart} onRemoveFromCart={onRemoveFromCart} />} />
 				<Route path="/about" element={<About />} />
