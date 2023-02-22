@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 
-export default function NavBar() {
+export default function NavBar({itemsInCart}) {
 	return (
 		<div id="site-navbar">
 			<nav className="navbar navbar-expand-lg">
@@ -23,7 +23,7 @@ export default function NavBar() {
 							</li>
 							<li className="nav-item">
 								<NavLink className="nav-link" to="/cart">
-                  Cart
+                  Cart{itemsInCart ? <sup>{itemsInCart}</sup> : null}
 								</NavLink>
 							</li>
 							<li className="nav-item">

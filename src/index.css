@@ -5,7 +5,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-image: url("../public/background.jpg");
+	background-image: url("./assets/background.jpg");
 	background-color: #110a06;
 	/* background-position: center; */
 	background-repeat: no-repeat;
@@ -42,12 +42,12 @@ body {
 }
 
 /* Hero Content */
-#header{
+#header, #about, #contact{
   margin: 200px 0 0 77px;
   width: 40%;
 }
 
-.hero-heading {
+.hero-heading, .hero-about, .hero-contact {
 	font-weight: bold;
 	font-size: 80px;
 }
@@ -82,4 +82,55 @@ body {
 .btn-custom:hover {
   background-color: #BC6C25
   ;
+}
+
+/* Active class when a link is clicked */
+.active {
+  background-color: #DDA15E;
+  color: #ffff !important;
+  border-radius: 3px;
+  padding: 2px 16px;
+  margin-top: 35px;
+}
+
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+/* Menu-container */
+
+.menu-container {
+  background-color: #DDA15E;
+  width: 91%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 10px;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.card-title {
+  color: #000;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card {
+  margin: 15px 0;
+}
+
+.spec-buttons {
+  display: flex;
+  justify-content: space-evenly;
 }
