@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Homepage from "./Homepage";
 import About from "./About";
-import Contact from "./Contact";
+import Contacts from "./Contacts";
 import CafeMenu from "./CafeMenu";
 import CafeItemSpec from "./CafeItemSpec";
 import Cart from "./Cart";
@@ -42,7 +42,7 @@ function App() {
 				<Route path="/menu/:id" element={<CafeItemSpec onAddToCart={onAddToCart} onDeleteItem={onDeleteItem} />} />
 				<Route path="/cart" element={<Cart cart={cart} onRemoveFromCart={onRemoveFromCart} />} />
 				<Route path="/about" element={<About />} />
-				<Route path="/contacts" element={<Contact />} />
+				<Route path="/contacts" element={<Contacts />} />
 			</Routes>
 		</div>
 	);
