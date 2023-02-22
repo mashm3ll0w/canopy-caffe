@@ -15,18 +15,15 @@
 ## Project Description
 
 
-## Live Link
-
-
 ## Project Setup
 To view this application
 
 1. Run npm install in your terminal.
-2. Run npm run server. This will run your backend on port 3003.
-3. In a new terminal, run npm start. This will run your React app on port 3000.
+2. Run npm run server. This will run your backend on port 4000 (http://localhost:4000)
+3. In a new terminal, run npm start. This will run your React app on port 4000.
 In our React application, the data passed is in the db.json file. This file will mimic an API that follows RESTful conventions.
 
-Make sure to open http://localhost:3003/inventory in the browser to verify that your backend is working before you proceed!
+Make sure to open http://localhost:4000/inventory in the browser to verify that your backend is working before you proceed!
 
 
 
