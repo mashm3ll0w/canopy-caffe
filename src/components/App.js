@@ -1,59 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./NavBar";
+import Homepage from "./Homepage";
+import About from "./About";
+import Contact from "./Contact";
+import CafeMenu from "./CafeMenu";
+import CafeItemSpec from "./CafeItemSpec";
+import Cart from "./Cart";
 
 function App() {
+	const [menu, setMenu] = useState([]);
+	const [cart, setCart] = useState([]);
+
+	useEffect(() => {
+		fetch("http://localhost:4000/inventory")
+			.then((res) => res.json())
+			.then((data) => setMenu(data))
+			.catch((err) => console.log("Error :", err.message));
+	}, []);
+
+	function onDeleteItem(deleted) {
+		const updatedMenu = menu.filter((item) => item.id !== deleted.id);
+		setMenu(updatedMenu);
+	}
+
+	function onAddToCart(toAdd) {
+		setCart([...cart, toAdd]);
+	}
+
+	function onRemoveFromCart(removed) {
+		const updatedCart = cart.filter((item) => item.id !== removed.id);
+		setCart(updatedCart);
+	}
+
 	return (
 		<div>
-			<div id="site-navbar">
-				<nav class="navbar navbar-expand-lg">
-					<div class="container-fluid nav-container">
-						<a class="navbar-brand" href="/">
-							Canopy.CAFFE
-						</a>
-						<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link" aria-current="page" href="/">
-										Home
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="/menu">
-										Menu
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="/cart">
-										Cart
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="/about">
-										About Us
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="/contacts">
-										Contacts
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</div>
-			<div id="header">
-				<h1 className="hero-heading">DRINKS TO JACK YOUR MIND</h1>
-				<p className="tagline">Darkest Berries. Sweetest...</p>
-				<p className="tag-inventory">We stock the sickest (no pun intended) inventory of Coffee, Tea, Juices, Milkshakes, Pastries and more. <br/> Whatever it takes to get you moving.</p>
-				<div className="home-buttons">
-					<button className="btn btn-custom" type="button" name="menu-button">
-						EXPLORE
-					</button>
-					<button className="btn btn-custom" type="button" name="menu-button">
-						LEARN MORE
-					</button>
-				</div>
-			</div>
+			<NavBar itemsInCart={cart.length}/>
+			<Routes>
+				<Route path="/" element={<Homepage />} />
+				<Route path="/menu" element={<CafeMenu menu={menu} />} />
+				<Route path="/menu/:id" element={<CafeItemSpec onAddToCart={onAddToCart} onDeleteItem={onDeleteItem} />} />
+				<Route path="/cart" element={<Cart cart={cart} onRemoveFromCart={onRemoveFromCart} />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/contacts" element={<Contact />} />
+			</Routes>
 		</div>
 	);
 }
