@@ -86,6 +86,16 @@
             "size": "small",
             "description": "Life is better with freshly baked goods!",
             "poster_url": "https://rickandmortyapi.com/api/character/avatar/9.jpeg"
-        }
+        },
+        
+        {
+            "id": "10",
+            "name": "Latte",
+            "type": "Coffee",
+            "price": 350,
+            "size": "large",
+            "description": "I like you a Latte!",
+            "poster_url": "https://rickandmortyapi.com/api/character/avatar/712.jpeg"
+         },
     ]
 }
