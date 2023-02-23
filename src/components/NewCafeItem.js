@@ -1,11 +1,11 @@
 import React,{ useState } from "react";    
 
-function NewCafeItem() { 
+function NewCafeItem({ onAddToMenu}) { 
 const [formData, setFormData] = useState({
     name: "", 
     type: "",
     price:"",
-    size:"",
+    size:"", 
     description:"",
     poster_url: "",   
   });  

@@ -69,6 +69,12 @@ body {
   gap: 50px;
 }
 
+input,textarea,button {
+  color:dodgerblue;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
 /* .home-buttons > button {
   font-weight: bold;
 } */

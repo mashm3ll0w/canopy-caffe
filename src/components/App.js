@@ -32,6 +32,9 @@ function App() {
 		const updatedCart = cart.filter((item) => item.id !== removed.id);
 		setCart(updatedCart);
 	}
+    
+
+
 
 	return (
 		<div>
