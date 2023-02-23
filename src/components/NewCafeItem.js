@@ -53,7 +53,7 @@ return (
   value={formData.poster_url}
 />
 
-<button />
+<button type = "submit"> SUBMIT </button>
 </form>
 );
 }
