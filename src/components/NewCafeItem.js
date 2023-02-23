@@ -26,7 +26,7 @@ return (
   <input
     type="text"
     name="name"
-    placeholder="Enter Menu Name"
+    placeholder="Menu Name"
     onChange={handleChange}
     value={formData.name}
    />
@@ -36,37 +36,45 @@ return (
  <input
    type="text"
    name="type"
-   placeholder="Enter Menu Type"
-   onChange={console.log('form')}
-   value={handleChange}
- />
+   placeholder="Menu Type"
+   onChange={handleChange}
+   value={formData.type}
+   />
 </div>
 
-<input
-  type="text"
-  name="price"
-  placeholder="Enter Price in KES"
-  onChange={console.log('form')}
-  value={handleChange}
-/>
+<div class="col-sm">
+ <input
+   type="text"
+   name="price"
+   placeholder="Price in KES"
+   onChange={handleChange}
+   value={formData.price}
+   />
+</div>
 
-<input
-  type="text"
-  name="description"
-  placeholder="Enter Description"
-  onChange={console.log('form')}
-  value={handleChange}
-/>
+<div class="col-sm">
+  <input
+   type="text"
+   name="description"
+   placeholder="Description"
+   onChange={handleChange}
+   value={formData.description}
+   />
+</div>
 
-<input
-  type="text"
-  name="poster_url"
-  placeholder="Enter Poster URL"
-  onChange={handleChange}
-  value={formData.poster_url}
-/>
+<div class="col-sm">
+ <input
+   type="text"
+   name="poster_url"
+   placeholder="Poster URL"
+   onChange={handleChange}
+   value={formData.poster_url}
+  />
+</div>
 
-<button type = "submit"> SUBMIT </button>
+<div class="cool-auto">
+<button type = "submit" class="btn btn-primary"> SUBMIT NEW ITEM </button>
+</div>
 </div>
 </form>
 );
