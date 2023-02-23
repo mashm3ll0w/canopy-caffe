@@ -19,23 +19,28 @@ const [formData, setFormData] = useState({
   }
 
 return (
-<form className="NewItem" onSubmit={handleSubmit}>    
+<form className="NewItem" onSubmit={handleSubmit}>   
 
-<input
-  type="text"
-  name="name"
-  placeholder="Enter Menu Name"
-  onChange={handleChange}
-  value={formData.name}
-  />
+<div class="row g-3">
+ <div class="col-sm-7"> 
+  <input
+    type="text"
+    name="name"
+    placeholder="Enter Menu Name"
+    onChange={handleChange}
+    value={formData.name}
+   />
+</div>
 
-<input
-  type="text"
-  name="type"
-  placeholder="Enter Menu Type"
-  onChange={console.log('form')}
-  value={handleChange}
-/>
+<div class="col-sm">
+ <input
+   type="text"
+   name="type"
+   placeholder="Enter Menu Type"
+   onChange={console.log('form')}
+   value={handleChange}
+ />
+</div>
 
 <input
   type="text"
@@ -62,6 +67,7 @@ return (
 />
 
 <button type = "submit"> SUBMIT </button>
+</div>
 </form>
 );
 }
