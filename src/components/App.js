@@ -33,8 +33,9 @@ function App() {
 		setCart(updatedCart);
 	}
     
-
-
+   function onAddToMenu(menuItem){
+	setMenu([...menu, menuItem])
+   }
 
 	return (
 		<div>
