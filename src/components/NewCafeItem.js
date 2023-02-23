@@ -20,10 +20,9 @@ const [formData, setFormData] = useState({
 
 return (
 
-<form className="NewItem" onSubmit={handleSubmit} className="row gy-2 gx-3 align-items-center">  
-<span>
-<label htmlFor = "name">   Hey Morty, GrandPa Rick needs you to wistfully go on an adventure to conceive the next Interdimensional Menu Hit to Suit Your Fancy! Be good, You got this! </label>
-</span> 
+<form className="row gy-2 gx-3 align-items-center" onSubmit={handleSubmit} >  
+<span><label htmlFor = "name"> GrandPa Rick needs you to wistfully go on an adventure to conceive the next Interdimensional Menu Hit to Suit Your Fancy!</label></span> 
+<span><label htmlFor = "name"> Be good Morty, You got this! </label></span>
 
 <div className="row g-3">
  <div className="col-sm-4"> 
