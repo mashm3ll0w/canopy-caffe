@@ -69,17 +69,21 @@ body {
   gap: 50px;
 }
 
-input,textarea,button {
+input,
+textarea,
+button {
+  border:none;
+  padding: 0.5rem;
+  border-radius: 4px;
   color:dodgerblue;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
   display: flex;
 }
 
 form {
   display: flex;
 }
-
 
 /* .home-buttons > button {
   font-weight: bold;

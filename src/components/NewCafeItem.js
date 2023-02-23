@@ -20,13 +20,16 @@ const [formData, setFormData] = useState({
 
 return (
 
-<form className="NewItem" onSubmit={handleSubmit}>   
-<label htmlFor = "name"> Hey Morty, I need you to help us to conceive a New Scientific Menu Item to Suit Your Fancy! Be good, You got this! </label>
-<div class="row g-3">
- <div class="col-sm-4"> 
+<form className="NewItem" onSubmit={handleSubmit} className="row gy-2 gx-3 align-items-center">  
+<span>
+<label htmlFor = "name">   Hey Morty, GrandPa Rick needs you to wistfully go on an adventure to conceive the next Interdimensional Menu Hit to Suit Your Fancy! Be good, You got this! </label>
+</span> 
+
+<div className="row g-3">
+ <div className="col-sm-4"> 
   <input
     type="text"
-    class="form-control"
+    className="form-control"
     name="name"
     placeholder="Menu Name"
     onChange={handleChange}
@@ -34,10 +37,10 @@ return (
    />
 </div>
 
-<div class="col-sm">
+<div className="col-sm">
  <input
    type="text"
-   class="form-control"
+   className="form-control"
    name="type"
    placeholder="Menu Type"
    onChange={handleChange}
@@ -45,10 +48,10 @@ return (
    />
 </div>
 
-<div class="col-sm">
+<div className="col-sm">
  <input
    type="text"
-   class="form-control"
+   className="form-control"
    name="price"
    placeholder="Price in KES"
    onChange={handleChange}
@@ -56,10 +59,10 @@ return (
    />
 </div>
 
-<div class="col-sm">
+<div className="col-sm">
   <input
    type="text"
-   class="form-control"
+   className="form-control"
    name="description"
    placeholder="Description"
    onChange={handleChange}
@@ -67,10 +70,10 @@ return (
    />
 </div>
 
-<div class="col-sm">
+<div className="col-sm">
  <input
    type="text"
-   class="form-control"
+   className="form-control"
    name="poster_url"
    placeholder="Poster URL"
    onChange={handleChange}
@@ -78,9 +81,10 @@ return (
   />
 </div>
 
-<div class="col-auto">
-<button type = "submit" class="btn btn-primary"> SUBMIT NEW ITEM </button>
+<div className="col-auto">
+<button type = "button" className ="btn btn-primary"> SUBMIT NEW MORTY ITEM </button>
 </div>
+
 </div>
 </form>
 );
