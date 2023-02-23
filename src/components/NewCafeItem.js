@@ -10,14 +10,22 @@ const [formData, setFormData] = useState({
     poster_url: "",   
   });  
 
+  function handleSubmit(e){
+  console.log("Submitting form data");
+  }
+
+  function handleChange(e){
+  console.log("Changing form data")
+  }
+
 return (
-<form className="NewItem" onSubmit={console.log('submit')}>    
+<form className="NewItem" onSubmit={handleSubmit}>    
 
 <input
   type="text"
   name="name"
   placeholder="Enter Menu Name"
-  onChange={console.log('form')}
+  onChange={handleChange}
   value={formData.name}
   />
 
@@ -26,7 +34,7 @@ return (
   name="type"
   placeholder="Enter Menu Type"
   onChange={console.log('form')}
-  value={formData.type}
+  value={handleChange}
 />
 
 <input
@@ -34,7 +42,7 @@ return (
   name="price"
   placeholder="Enter Price in KES"
   onChange={console.log('form')}
-  value={formData.price}
+  value={handleChange}
 />
 
 <input
@@ -42,14 +50,14 @@ return (
   name="description"
   placeholder="Enter Description"
   onChange={console.log('form')}
-  value={formData.description}
+  value={handleChange}
 />
 
 <input
   type="text"
   name="poster_url"
   placeholder="Enter Poster URL"
-  onChange={console.log('form')}
+  onChange={handleChange}
   value={formData.poster_url}
 />
 
