@@ -27,7 +27,7 @@ return (
   placeholder="Enter Menu Type"
   onChange={console.log('form')}
   value={formData.type}
-  />
+/>
 
 <input
   type="text"
@@ -35,10 +35,25 @@ return (
   placeholder="Enter Price in KES"
   onChange={console.log('form')}
   value={formData.price}
-  />
+/>
 
-    <input />
-    <button />
+<input
+  type="text"
+  name="description"
+  placeholder="Enter Description"
+  onChange={console.log('form')}
+  value={formData.description}
+/>
+
+<input
+  type="text"
+  name="poster_url"
+  placeholder="Enter Poster URL"
+  onChange={console.log('form')}
+  value={formData.poster_url}
+/>
+
+<button />
 </form>
 );
 }
