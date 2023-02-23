@@ -42,7 +42,7 @@ function App() {
 			<NavBar itemsInCart={cart.length}/>
 			<Routes>
 				<Route path="/" element={<Homepage />} />
-				<Route path="/menu" element={<CafeMenu menu={menu} />} />
+				<Route path="/menu" element={<CafeMenu menu={menu} onAddToMenu={onAddToMenu} />} />
 				<Route path="/menu/:id" element={<CafeItemSpec onAddToCart={onAddToCart} onDeleteItem={onDeleteItem} />} />
 				<Route path="/cart" element={<Cart cart={cart} onRemoveFromCart={onRemoveFromCart} />} />
 				<Route path="/about" element={<About />} />
