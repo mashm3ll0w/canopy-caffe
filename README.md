@@ -13,7 +13,13 @@
 
 
 ## Project Description
+Welcome to our intergalactic surreal online coffee shop,  **Canopy Caffe**, be part of our new animated reality that makes it easy for to enjoy your coffee or beverage or snack of your liking wherever you are. 
 
+This coffee shop was originally inspired by the Ricky and Monty Characters and their absurd intergalactic adventurers that has become its culture!
+
+Get ready to be part of this hilarious reality while you order beverage and snack of choice at your comfort.This animated detail creates a new sense of imagination that you feel while being part of this experience and have some funny moments of fun, the Mortyest Moment Ever!
+
+Bon Appetit!
 
 ## Live Link
 
