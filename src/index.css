@@ -73,7 +73,13 @@ input,textarea,button {
   color:dodgerblue;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
+  display: flex;
 }
+
+form {
+  display: flex;
+}
+
 
 /* .home-buttons > button {
   font-weight: bold;
