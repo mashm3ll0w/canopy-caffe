@@ -12,14 +12,30 @@ const [formData, setFormData] = useState({
 
 return (
 <form className="NewItem" onSubmit={console.log('submit')}>    
-{/* <label htmlFor="name"> Enter Name: </label> */}
-  <input
-      type="text"
-      name="name"
-      placeholder="Enter Name"
-      onChange={console.log('form')}
-      value={formData.name}
-      />
+
+<input
+  type="text"
+  name="name"
+  placeholder="Enter Menu Name"
+  onChange={console.log('form')}
+  value={formData.name}
+  />
+
+<input
+  type="text"
+  name="type"
+  placeholder="Enter Menu Type"
+  onChange={console.log('form')}
+  value={formData.type}
+  />
+
+<input
+  type="text"
+  name="price"
+  placeholder="Enter Price in KES"
+  onChange={console.log('form')}
+  value={formData.price}
+  />
 
     <input />
     <button />
