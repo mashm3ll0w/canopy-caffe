@@ -10,9 +10,17 @@ const [formData, setFormData] = useState({
     poster_url: "",   
   });  
 
-
 return (
-<form>
+<form className="NewItem" onSubmit={console.log('submit')}>    
+{/* <label htmlFor="name"> Enter Name: </label> */}
+  <input
+      type="text"
+      name="name"
+      placeholder="Enter Name"
+      onChange={console.log('form')}
+      value={formData.name}
+      />
+
     <input />
     <button />
 </form>
