@@ -13,6 +13,15 @@
 
 
 ## Project Description
+Welcome to the first intergalactic surreal online coffee shop in Kenya,  **Canopy Caffe**, be part of our new animated reality that makes it easy for to enjoy your coffee or beverage or snack of your liking wherever you are conveniently at the click of a button. 
+
+This coffee shop was originally inspired by the Rick and Morty TV Series characters, their absurd intergalactic adventurers that are just corny, silly and fun.
+
+Get ready to be part of this hilarious cosmical virtual reality when you order beverage and snack of choice at your comfort.This animated detail creates a new sense of imagination that you feel revitalized and enjoy our food with some funny moments of fun, may you have the Mortyest Moment Ever at Canopy Caffe!
+
+Bon Appetit!
+
+![Rick Morty Ad2](https://user-images.githubusercontent.com/118021645/221177919-8123c8d4-dd99-4022-954b-3e94f1196a9d.jpeg)
 
 
 ## Project Setup
