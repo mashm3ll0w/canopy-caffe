@@ -111,8 +111,8 @@
     {
       "name": "Java ",
       "type": "Coffee",
-      "price": "250",
-      "size": "",
+      "price": 250,
+      "size": "medium",
       "description": "Kenya Halisi",
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/72.jpeg",
       "id": 13
@@ -120,11 +120,20 @@
     {
       "name": "Strong Tea",
       "type": "Tea",
-      "price": "100",
-      "size": "Small",
+      "price": 100,
+      "size": "small",
       "description": "Chai Yetu",
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/21.jpeg",
       "id": 14
+    },
+    {
+      "name": "Fanta Orange",
+      "type": "Soda",
+      "price": 80,
+      "size": "small",
+      "description": "Kenya's favoritr",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/7.jpeg",
+      "id": 15
     }
   ]
 }

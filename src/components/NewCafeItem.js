@@ -17,7 +17,14 @@ function NewCafeItem({ onAddToMenu}) {
     headers: {
     "Content-Type": "application/json",
     },
-    body: JSON.stringify(formData),
+    body: JSON.stringify({
+     name: formData.name, 
+     type: formData.type,
+     price:parseInt(formData.price),
+     size:formData.size,
+      description:formData.description,
+      poster_url: formData.poster_url, 
+    }),
     })
     .then((res) => res.json())
     .then((newItem) => {
