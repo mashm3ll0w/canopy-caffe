@@ -13,6 +13,12 @@ body {
 	color: #ffff;
 }
 
+.Filter {
+  margin-left: 62.5px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* NavBar */
 .nav-container {
 	padding: 0 70px;
