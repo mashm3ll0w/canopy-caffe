@@ -84,6 +84,17 @@ return (
 </div>
 
 <div className="col-sm">
+ <input
+   type="text"
+   className="form-control"
+   name="size"
+   placeholder="Size"
+   onChange={handleChange}
+   value={formData.size}
+   />
+</div>
+
+<div className="col-sm">
   <input
    type="text"
    className="form-control"

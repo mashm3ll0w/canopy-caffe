@@ -1,7 +1,7 @@
 {
   "inventory": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Cappuccino",
       "type": "Coffee",
       "price": 350,
@@ -10,7 +10,7 @@
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Espresso",
       "type": "Coffee",
       "price": 250,
@@ -19,7 +19,7 @@
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Kenyan Tea",
       "type": "Tea",
       "price": 250,
@@ -28,7 +28,7 @@
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/3.jpeg"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Macha",
       "type": "Tea",
       "price": 300,
@@ -37,7 +37,7 @@
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/4.jpeg"
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Orange",
       "type": "Juice",
       "price": 350,
@@ -46,7 +46,7 @@
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/5.jpeg"
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "Mango",
       "type": "Juice",
       "price": 350,
@@ -55,7 +55,7 @@
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/6.jpeg"
     },
     {
-      "id": "7",
+      "id": 7,
       "name": "Chocolate Delight",
       "type": "Milkshake",
       "price": 450,
@@ -64,7 +64,7 @@
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/7.jpeg"
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "Vanilla",
       "type": "Milkshake",
       "price": 450,
@@ -73,7 +73,7 @@
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/8.jpeg"
     },
     {
-      "id": "9",
+      "id": 9,
       "name": "Puff Pastry",
       "type": "Pastry",
       "price": 300,
@@ -82,7 +82,7 @@
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/9.jpeg"
     },
     {
-      "id": "10",
+      "id": 10,
       "name": "Latte",
       "type": "Coffee",
       "price": 350,
@@ -93,20 +93,38 @@
     {
       "name": "Tamarind",
       "type": "Juice",
-      "price": "500",
-      "size": "",
+      "price": 500,
+      "size": "large",
       "description": "Who does not love ukwaju!",
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/56.jpeg",
-      "id": "yN30apq"
+      "id": 11
     },
     {
       "name": "Yoggo Yoggo",
       "type": "MilkShake",
-      "price": "550",
-      "size": "",
+      "price": 550,
+      "size": "medium",
       "description": "Shake up your taste buds!!",
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/187.jpeg",
-      "id": "1AorOIa"
+      "id": 12
+    },
+    {
+      "name": "Java ",
+      "type": "Coffee",
+      "price": "250",
+      "size": "",
+      "description": "Kenya Halisi",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/72.jpeg",
+      "id": 13
+    },
+    {
+      "name": "Strong Tea",
+      "type": "Tea",
+      "price": "100",
+      "size": "Small",
+      "description": "Chai Yetu",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/21.jpeg",
+      "id": 14
     }
   ]
 }
