@@ -106,7 +106,11 @@ return (
 </div>
 
 <div className="col-auto">
-<button type = "button" className ="btn btn-primary"> SUBMIT NEW MORTY ITEM </button>
+<button 
+type = "button" 
+onClick={handleSubmit}
+className ="btn btn-primary"> SUBMIT NEW MORTY ITEM 
+</button>
 </div>
 
 </div>
