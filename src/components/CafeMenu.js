@@ -1,15 +1,18 @@
 import CafeItem from "./CafeItem";
+import Filter from "./Filter";
 import { useNavigate } from "react-router-dom";
 
-export default function CafeMenu({ menu }) {
+export default function CafeMenu({ menu, handleSearch, filter }) {
 	const navigate = useNavigate();
-
+  const afterFilter = menu.filter((item)=>item.name.toLowerCase().includes(filter.toLocaleLowerCase()))
+  
 	function handleClick(){
 		navigate("/menu/new")
 	}
 
 	return (
 		<>
+     <Filter filter={filter} handleSearch={handleSearch} />
 		 <div class="col text-center">
 		   <button 
 		   className="btn btn-custom" 
@@ -20,8 +23,8 @@ export default function CafeMenu({ menu }) {
 		</div>
 
 		<div className="menu-container container-fluid">
-				{menu.map((item) => (
-				<CafeItem key={item.id} item={item} />
+				{afterFilter.map((item) => (
+					<CafeItem key={item.id} item={item} />
 				))}
 		</div>
 		</>
