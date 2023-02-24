@@ -1,15 +1,29 @@
 import CafeItem from "./CafeItem";
-import NewCafeItem from "./NewCafeItem";
+import { useNavigate } from "react-router-dom";
 
-export default function CafeMenu({ menu, onAddToMenu }) {
+export default function CafeMenu({ menu }) {
+	const navigate = useNavigate();
+
+	function handleClick(){
+		navigate("/menu/new")
+	}
+
 	return (
 		<>
-		<NewCafeItem onAddToMenu={onAddToMenu}/>
-			<div className="menu-container container-fluid">
+		 <div class="col text-center">
+		   <button 
+		   className="btn btn-custom" 
+		   type="button" 
+		   name="menu-button" 
+		   onClick={handleClick}>CREATE NEW ITEM
+			</button>
+		</div>
+
+		<div className="menu-container container-fluid">
 				{menu.map((item) => (
-					<CafeItem key={item.id} item={item} />
+				<CafeItem key={item.id} item={item} />
 				))}
-			</div>
+		</div>
 		</>
 	);
 }
