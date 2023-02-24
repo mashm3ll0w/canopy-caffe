@@ -12,7 +12,7 @@ import NewCafeItem from "./NewCafeItem";
 function App() {
 	const [menu, setMenu] = useState([]);
 	const [cart, setCart] = useState([]);
-	const [filter, setFilter] = useState("")
+	const [filter, setFilter] = useState("");
 
 	useEffect(() => {
 		fetch("http://localhost:4000/inventory")
@@ -35,22 +35,20 @@ function App() {
 		setCart(updatedCart);
 	}
 
-	function handleSearch(event){
-		setFilter(event.target.value)
+	function handleSearch(event) {
+		setFilter(event.target.value);
 		//console.log(event)
 	}
- 
 
-    
-   function onAddToMenu(menuItem){
-	setMenu([...menu, menuItem])
-   }
+	function onAddToMenu(menuItem) {
+		setMenu([...menu, menuItem]);
+	}
 
 	return (
 		<div>
-			<NavBar itemsInCart={cart.length}/>
+			<NavBar itemsInCart={cart.length} />
 			<Routes>
-				<Route path="/" element={<Homepage />} /
+				<Route path="/" element={<Homepage />} />
 				<Route path="/menu" element={<CafeMenu menu={menu} filter={filter} handleSearch={handleSearch} />} />
 				<Route path="/menu/new" element={<NewCafeItem onAddToMenu={onAddToMenu} />} />
 				<Route path="/menu/:id" element={<CafeItemSpec onAddToCart={onAddToCart} onDeleteItem={onDeleteItem} />} />
