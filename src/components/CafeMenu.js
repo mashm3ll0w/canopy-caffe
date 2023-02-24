@@ -1,10 +1,9 @@
 import CafeItem from "./CafeItem";
-import NewCafeItem from "./NewCafeItem";
 
 export default function CafeMenu({ menu, onAddToMenu }) {
 	return (
 		<>
-		<NewCafeItem onAddToMenu={onAddToMenu}/>
+		   <button className="btn btn-custom" type="button" name="menu-button" onClick={handleClick}>EXPLORE</button>
 			<div className="menu-container container-fluid">
 				{menu.map((item) => (
 					<CafeItem key={item.id} item={item} />
