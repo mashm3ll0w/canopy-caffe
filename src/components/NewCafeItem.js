@@ -22,13 +22,26 @@ const [formData, setFormData] = useState({
     .then((res) => res.json())
     .then((newItem) => {
       onAddToMenu(newItem)
-      setFormData(formData)
+      setFormData({
+        name: "", 
+        type: "",
+        price:"",
+        size:"",
+        description:"",
+        poster_url: "",   
+      })
      }
     ) 
   }
 
   function handleChange(e){
-  console.log("Changing form data")
+    const name = e.target.name;
+    let value = e.target.value;
+
+    setFormData({
+      ...formData,
+      [name]: value, 
+    });
   }
 
 return (
