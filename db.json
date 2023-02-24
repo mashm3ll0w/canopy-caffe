@@ -1,94 +1,166 @@
 {
-	"inventory": [
-		{
-			"id": "1",
-			"name": "Cappuccino",
-			"type": "Coffee",
-			"price": 350,
-			"size": "large",
-			"description": "A Cappuccino a day keeps grumpy away!",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-		},
-		{
-			"id": "2",
-			"name": "Espresso",
-			"type": "Coffee",
-			"price": 250,
-			"size": "small",
-			"description": "More Espressoo Less Depresso",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
-		},
-		{
-			"id": "3",
-			"name": "Kenyan Tea",
-			"type": "Tea",
-			"price": 250,
-			"size": "medium",
-			"description": "Karibu Chai!",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/3.jpeg"
-		},
-		{
-			"id": "4",
-			"name": "Macha",
-			"type": "Tea",
-			"price": 300,
-			"size": "medium",
-			"description": "You mean so Macha to me!",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/4.jpeg"
-		},
-		{
-			"id": "5",
-			"name": "Orange",
-			"type": "Juice",
-			"price": 350,
-			"size": "medium",
-			"description": "Squeeze out that creative juice!",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/5.jpeg"
-		},
-		{
-			"id": "6",
-			"name": "Mango",
-			"type": "Juice",
-			"price": 350,
-			"size": "medium",
-			"description": "The Juice is worth the squeeze!",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/6.jpeg"
-		},
-		{
-			"id": "7",
-			"name": "Chocolate Delight",
-			"type": "Milkshake",
-			"price": 450,
-			"size": "large",
-			"description": "A little too much chocolate is just about right!",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/7.jpeg"
-		},
-		{
-			"id": "8",
-			"name": "Vanilla",
-			"type": "Milkshake",
-			"price": 450,
-			"size": "large",
-			"description": "Milk shake it up!",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/8.jpeg"
-		},
-		{
-			"id": "9",
-			"name": "Puff Pastry",
-			"type": "Pastry",
-			"price": 300,
-			"size": "small",
-			"description": "Life is better with freshly baked goods!",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/9.jpeg"
-		},
-		{
-			"id": "10",
-			"name": "Latte",
-			"type": "Coffee",
-			"price": 350,
-			"size": "large",
-			"description": "I like you a Latte!",
-			"poster_url": "https://rickandmortyapi.com/api/character/avatar/712.jpeg"
-		}
-	]
+  "inventory": [
+    {
+      "id": 1,
+      "name": "Cappuccino",
+      "type": "Coffee",
+      "price": 350,
+      "size": "large",
+      "description": "A Cappuccino a day keeps grumpy away!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Espresso",
+      "type": "Coffee",
+      "price": 250,
+      "size": "small",
+      "description": "More Espressoo Less Depresso",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Kenyan Tea",
+      "type": "Tea",
+      "price": 250,
+      "size": "medium",
+      "description": "Karibu Chai!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/3.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Macha",
+      "type": "Tea",
+      "price": 300,
+      "size": "medium",
+      "description": "You mean so Macha to me!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/4.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Orange",
+      "type": "Juice",
+      "price": 350,
+      "size": "medium",
+      "description": "Squeeze out that creative juice!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/5.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Mango",
+      "type": "Juice",
+      "price": 350,
+      "size": "medium",
+      "description": "The Juice is worth the squeeze!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/6.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Chocolate Delight",
+      "type": "Milkshake",
+      "price": 450,
+      "size": "large",
+      "description": "A little too much chocolate is just about right!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/7.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Vanilla",
+      "type": "Milkshake",
+      "price": 450,
+      "size": "large",
+      "description": "Milk shake it up!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/8.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Puff Pastry",
+      "type": "Pastry",
+      "price": 300,
+      "size": "small",
+      "description": "Life is better with freshly baked goods!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/9.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Latte",
+      "type": "Coffee",
+      "price": 350,
+      "size": "large",
+      "description": "I like you a Latte!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/712.jpeg"
+    },
+    {
+      "name": "Tamarind",
+      "type": "Juice",
+      "price": 500,
+      "size": "large",
+      "description": "Who does not love ukwaju!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/56.jpeg",
+      "id": 11
+    },
+    {
+      "name": "Yoggo Yoggo",
+      "type": "MilkShake",
+      "price": 550,
+      "size": "medium",
+      "description": "Shake up your taste buds!!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/187.jpeg",
+      "id": 12
+    },
+    {
+      "name": "Java ",
+      "type": "Coffee",
+      "price": 250,
+      "size": "medium",
+      "description": "Kenya Halisi",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/72.jpeg",
+      "id": 13
+    },
+    {
+      "name": "Strong Tea",
+      "type": "Tea",
+      "price": 100,
+      "size": "small",
+      "description": "Chai Yetu",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/21.jpeg",
+      "id": 14
+    },
+    {
+      "name": "Fanta Orange",
+      "type": "Soda",
+      "price": 80,
+      "size": "small",
+      "description": "Kenya's favorite soda!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/70.jpeg",
+      "id": 15
+    },
+    {
+      "name": "Nesquick ",
+      "type": "Tea",
+      "price": 600,
+      "size": "",
+      "description": "Great Company!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/90.jpeg",
+      "id": 16
+    },
+    {
+      "name": "Macchiato",
+      "type": "",
+      "price": 700,
+      "size": "",
+      "description": "A Rare Taste!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/100.jpeg",
+      "id": 17
+    },
+    {
+      "name": "Malindicatto",
+      "type": "Coffee",
+      "price": 700,
+      "size": "medium",
+      "description": "A floral summer coffee!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/77.jpeg",
+      "id": 18
+    }
+  ]
 }

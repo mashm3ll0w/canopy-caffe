@@ -7,6 +7,7 @@ import Contacts from "./Contacts";
 import CafeMenu from "./CafeMenu";
 import CafeItemSpec from "./CafeItemSpec";
 import Cart from "./Cart";
+import NewCafeItem from "./NewCafeItem";
 
 function App() {
 	const [menu, setMenu] = useState([]);
@@ -32,6 +33,10 @@ function App() {
 		const updatedCart = cart.filter((item) => item.id !== removed.id);
 		setCart(updatedCart);
 	}
+    
+   function onAddToMenu(menuItem){
+	setMenu([...menu, menuItem])
+   }
 
 	return (
 		<div>
@@ -39,6 +44,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/menu" element={<CafeMenu menu={menu} />} />
+				<Route path="/menu/new" element={<NewCafeItem onAddToMenu={onAddToMenu} />} />
 				<Route path="/menu/:id" element={<CafeItemSpec onAddToCart={onAddToCart} onDeleteItem={onDeleteItem} />} />
 				<Route path="/cart" element={<Cart cart={cart} onRemoveFromCart={onRemoveFromCart} />} />
 				<Route path="/about" element={<About />} />
