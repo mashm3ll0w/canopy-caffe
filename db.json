@@ -143,6 +143,15 @@
       "description": "Great",
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/90.jpeg",
       "id": 16
+    },
+    {
+      "name": "Macchiato",
+      "type": "",
+      "price": 700,
+      "size": "",
+      "description": "Rare Taste",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/100.jpeg",
+      "id": 17
     }
   ]
 }

@@ -1,4 +1,5 @@
-import React,{ useState } from "react";    
+import React,{ useState } from "react";  
+import { useNavigate } from "react-router-dom";  
 
 const formStyle = {
 	width: "40%",
@@ -8,7 +9,7 @@ const formStyle = {
 };
 
 function NewCafeItem({ onAddToMenu}) { 
-
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "", 
     type: "",
@@ -26,10 +27,10 @@ function NewCafeItem({ onAddToMenu}) {
     "Content-Type": "application/json",
     },
     body: JSON.stringify({
-     name: formData.name, 
-     type: formData.type,
-     price:parseInt(formData.price),
-     size:formData.size,
+      name: formData.name, 
+      type: formData.type,
+      price:parseInt(formData.price),
+      size:formData.size,
       description:formData.description,
       poster_url: formData.poster_url, 
     }),
@@ -45,6 +46,7 @@ function NewCafeItem({ onAddToMenu}) {
         description:"",
         poster_url: "",   
       })
+      navigate(`/menu/${newItem.id}`)
      }
     ) 
   }
