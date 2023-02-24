@@ -10,18 +10,20 @@ export default function CafeMenu({ menu }) {
 
 	return (
 		<>
+		 <div class="col text-center">
 		   <button 
 		   className="btn btn-custom" 
 		   type="button" 
 		   name="menu-button" 
 		   onClick={handleClick}>CREATE NEW ITEM
 			</button>
+		</div>
 
-			<div className="menu-container container-fluid">
+		<div className="menu-container container-fluid">
 				{menu.map((item) => (
 				<CafeItem key={item.id} item={item} />
 				))}
-			</div>
+		</div>
 		</>
 	);
 }

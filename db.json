@@ -131,7 +131,7 @@
       "type": "Soda",
       "price": 80,
       "size": "small",
-      "description": "Kenya's favoritr",
+      "description": "Kenya's favorite soda!",
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/70.jpeg",
       "id": 15
     },
@@ -140,7 +140,7 @@
       "type": "Tea",
       "price": 600,
       "size": "",
-      "description": "Great",
+      "description": "Great Company!",
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/90.jpeg",
       "id": 16
     },
@@ -149,7 +149,7 @@
       "type": "",
       "price": 700,
       "size": "",
-      "description": "Rare Taste",
+      "description": "A Rare Taste!",
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/100.jpeg",
       "id": 17
     }
