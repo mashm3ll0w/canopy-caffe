@@ -134,6 +134,15 @@
       "description": "Kenya's favoritr",
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/70.jpeg",
       "id": 15
+    },
+    {
+      "name": "Nesquick ",
+      "type": "Tea",
+      "price": 600,
+      "size": "",
+      "description": "Great",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/90.jpeg",
+      "id": 16
     }
   ]
 }

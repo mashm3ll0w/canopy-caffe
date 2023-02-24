@@ -1,6 +1,14 @@
 import React,{ useState } from "react";    
 
+const formStyle = {
+	width: "40%",
+  border: "grey solid 1px",
+  borderRadius: "11px",
+  padding: "40px"
+};
+
 function NewCafeItem({ onAddToMenu}) { 
+
   const [formData, setFormData] = useState({
     name: "", 
     type: "",
@@ -52,88 +60,71 @@ function NewCafeItem({ onAddToMenu}) {
   }
 
 return (
-<form className="row gy-2 gx-3 align-items-center" onSubmit={handleSubmit} >  
-<span><label htmlFor = "name"> GrandPa Rick needs you to wistfully go on an adventure to conceive the next Interdimensional Menu Hit to Suit Your Fancy!</label></span> 
-<span><label htmlFor = "name"> Be good Morty, You got this! </label></span>
+		<div className="form-container container-fluid" style={formStyle}>
+			<form className="row gy-2 gx-3 align-items-center">
+				<div className="mb-3">
+					<label htmlFor="menuName" className="form-label">
+						Menu Name
+					</label>
+					<input type="text" id="menuName" className="form-control" name="name" placeholder="" onChange={handleChange} value={formData.name} />
+				</div>
 
-<div className="row g-3">
- <div className="col-sm-4"> 
-  <input
-    type="text"
-    className="form-control"
-    name="name"
-    placeholder="Menu Name"
-    onChange={handleChange}
-    value={formData.name}
-   />
-</div>
+				<div className="mb-3">
+					<label htmlFor="menuType" className="form-label">
+						Menu Type
+					</label>
+					<select id="menuType" name="type" className="form-select" onChange={handleChange} value={formData.type}>
+						<option value="Coffee">Coffee</option>
+						<option value="Tea">Tea</option>
+						<option value="Juice">Juice</option>
+						<option value="Milkshake">Milkshake</option>
+						<option value="Pastry">Pastry</option>
+					</select>
+				</div>
+				
+				<div className="mb-3">
+					<label htmlFor="menuSize" className="form-label">
+						Menu Size
+					</label>
+					<select id="menuSize" name="size" className="form-select" onChange={handleChange} value={formData.size}>
+						<option value="large">Large</option>
+						<option value="medium">Medium</option>
+						<option value="small">Small</option>
+					</select>
+				</div>
 
-<div className="col-sm">
- <input
-   type="text"
-   className="form-control"
-   name="type"
-   placeholder="Menu Type"
-   onChange={handleChange}
-   value={formData.type}
-   />
-</div>
+				<div className="mb-3">
+					<label htmlFor="menuPrice" className="form-label">
+						Price in KES
+					</label>
+					<input id="menuPrice" type="number" className="form-control" name="price" placeholder="" onChange={handleChange} value={formData.price} />
+				</div>
 
-<div className="col-sm">
- <input
-   type="text"
-   className="form-control"
-   name="price"
-   placeholder="Price in KES"
-   onChange={handleChange}
-   value={formData.price}
-   />
-</div>
+				<div className="mb-3">
+					<label htmlFor="menuDescription" className="form-label">
+						Description
+					</label>
+					<input id="menuDescription" type="text" className="form-control" name="description" placeholder="" onChange={handleChange} value={formData.description} />
+				</div>
 
-<div className="col-sm">
- <input
-   type="text"
-   className="form-control"
-   name="size"
-   placeholder="Size"
-   onChange={handleChange}
-   value={formData.size}
-   />
-</div>
+				<div className="mb-3">
+					<label htmlFor="menuImage" className="form-label">
+						Image
+					</label>
+					<input id="menuImage" type="text" className="form-control" name="poster_url" placeholder="" onChange={handleChange} value={formData.poster_url} />
+				</div>
 
-<div className="col-sm">
-  <input
-   type="text"
-   className="form-control"
-   name="description"
-   placeholder="Description"
-   onChange={handleChange}
-   value={formData.description}
-   />
-</div>
-
-<div className="col-sm">
- <input
-   type="text"
-   className="form-control"
-   name="poster_url"
-   placeholder="Poster URL"
-   onChange={handleChange}
-   value={formData.poster_url}
-  />
-</div>
-
-<div className="col-auto">
-<button 
-type = "button" 
-onClick={handleSubmit}
-className ="btn btn-primary"> SUBMIT NEW MORTY ITEM 
-</button>
-</div>
-
-</div>
-</form>
-);
+				<div className="col-auto">
+					<button type="button" 
+          onClick = {handleSubmit} 
+          className="btn btn-primary">
+						SUBMIT
+					</button>
+				</div>
+			</form>
+		</div>
+	);
 }
+
 
 export default NewCafeItem;   
