@@ -21,7 +21,7 @@ Get ready to be part of this hilarious cosmical virtual reality when you order b
 
 Bon Appetit!
 
-![Rick Morty Ad](https://user-images.githubusercontent.com/118021645/221175919-5be39c93-a8ab-409f-8ef6-252ff0b6fe57.jpeg)
+![Rick Morty Ad2](https://user-images.githubusercontent.com/118021645/221177919-8123c8d4-dd99-4022-954b-3e94f1196a9d.jpeg)
 
 
 ## Live Link
