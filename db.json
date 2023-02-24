@@ -152,6 +152,15 @@
       "description": "A Rare Taste!",
       "poster_url": "https://rickandmortyapi.com/api/character/avatar/100.jpeg",
       "id": 17
+    },
+    {
+      "name": "Malindicatto",
+      "type": "Coffee",
+      "price": 700,
+      "size": "medium",
+      "description": "A floral summer coffee!",
+      "poster_url": "https://rickandmortyapi.com/api/character/avatar/77.jpeg",
+      "id": 18
     }
   ]
 }

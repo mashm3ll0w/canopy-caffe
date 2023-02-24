@@ -81,8 +81,13 @@ button {
   display: flex;
 }
 
+label {
+  color:darkorange;
+  font-family: "Montserrat", sans-serif;
+}
 form {
   display: flex;
+
 }
 
 /* .home-buttons > button {
