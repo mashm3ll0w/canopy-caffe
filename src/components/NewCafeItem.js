@@ -11,7 +11,20 @@ const [formData, setFormData] = useState({
   });  
 
   function handleSubmit(e){
-  console.log("Submitting form data");
+   e.preventDefault();
+   fetch("http://localhost:4000/inventory", {
+    method:"POST",
+    headers: {
+    "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formData),
+    })
+    .then((res) => res.json())
+    .then((newItem) => {
+      onAddToMenu(newItem)
+      setFormData(formData)
+     }
+    ) 
   }
 
   function handleChange(e){
@@ -19,7 +32,6 @@ const [formData, setFormData] = useState({
   }
 
 return (
-
 <form className="row gy-2 gx-3 align-items-center" onSubmit={handleSubmit} >  
 <span><label htmlFor = "name"> GrandPa Rick needs you to wistfully go on an adventure to conceive the next Interdimensional Menu Hit to Suit Your Fancy!</label></span> 
 <span><label htmlFor = "name"> Be good Morty, You got this! </label></span>
