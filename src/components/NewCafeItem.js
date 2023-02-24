@@ -128,5 +128,4 @@ return (
 	);
 }
 
-
 export default NewCafeItem;   
