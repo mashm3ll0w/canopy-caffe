@@ -24,6 +24,10 @@ Bon Appetit!
 ![Rick Morty Ad2](https://user-images.githubusercontent.com/118021645/221177919-8123c8d4-dd99-4022-954b-3e94f1196a9d.jpeg)
 
 
+## Live Link
+The project is hosted on Netlify and can be found here https://canopy-caffe.netlify.app/
+
+
 ## Project Setup
 To view this application
 
