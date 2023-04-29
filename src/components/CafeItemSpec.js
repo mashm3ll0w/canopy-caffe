@@ -7,7 +7,7 @@ export default function CafeItemSpec({onAddToCart, onDeleteItem}) {
   const navigate = useNavigate()
 
 	useEffect(() => {
-		fetch(`http://localhost:4000/inventory/${id}`)
+		fetch(`https://movcon-app-api.onrender.com/caffe/${id}`)
 			.then((res) => res.json())
 			.then((data) => setItem(data))
 			.catch((err) => console.log("Error: ", err.message));
@@ -15,7 +15,7 @@ export default function CafeItemSpec({onAddToCart, onDeleteItem}) {
 
 
   function handleDelete(){
-    fetch(`http://localhost:4000/inventory/${item.id}`, {
+    fetch(`https://movcon-app-api.onrender.com/caffe/${item.id}`, {
       method: "DELETE"
     })
     .then(res => res.json())

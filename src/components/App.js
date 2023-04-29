@@ -15,7 +15,7 @@ function App() {
 	const [filter, setFilter] = useState("");
 
 	useEffect(() => {
-		fetch("http://localhost:4000/inventory")
+		fetch("https://movcon-app-api.onrender.com/caffe")
 			.then((res) => res.json())
 			.then((data) => setMenu(data))
 			.catch((err) => console.log("Error :", err.message));

@@ -1,5 +1,5 @@
-import React,{ useState } from "react";  
-import { useNavigate } from "react-router-dom";  
+import React,{ useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const formStyle = {
 	width: "40%",
@@ -8,47 +8,47 @@ const formStyle = {
   padding: "40px"
 };
 
-function NewCafeItem({ onAddToMenu}) { 
+function NewCafeItem({ onAddToMenu}) {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    name: "", 
+    name: "",
     type: "",
     price:"",
-    size:"", 
+    size:"",
     description:"",
-    poster_url: "",   
-    });  
+    poster_url: "",
+    });
 
   function handleSubmit(e){
    e.preventDefault();
-   fetch("http://localhost:4000/inventory", {
+   fetch("https://movcon-app-api.onrender.com/caffe", {
     method:"POST",
     headers: {
     "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      name: formData.name, 
+      name: formData.name,
       type: formData.type,
       price:parseInt(formData.price),
       size:formData.size,
       description:formData.description,
-      poster_url: formData.poster_url, 
+      poster_url: formData.poster_url,
     }),
     })
     .then((res) => res.json())
     .then((newItem) => {
       onAddToMenu(newItem)
       setFormData({
-        name: "", 
+        name: "",
         type: "",
         price:"",
         size:"",
         description:"",
-        poster_url: "",   
+        poster_url: "",
       })
       navigate(`/menu/${newItem.id}`)
      }
-    ) 
+    )
   }
 
   function handleChange(e){
@@ -57,7 +57,7 @@ function NewCafeItem({ onAddToMenu}) {
 
     setFormData({
       ...formData,
-      [name]: value, 
+      [name]: value,
     });
   }
 
@@ -93,7 +93,7 @@ return (
 						<option value="Pastry">Pastry</option>
 					</select>
 				</div>
-				
+
 				<div className="mb-3">
 					<label htmlFor="menuSize" className="form-label">
 						Menu Size
@@ -128,8 +128,8 @@ return (
 				</div>
 
 				<div className="col-auto">
-					<button type="button" 
-          onClick = {handleSubmit} 
+					<button type="button"
+          onClick = {handleSubmit}
           className="btn btn-primary">
 						SUBMIT
 					</button>
@@ -140,4 +140,4 @@ return (
 	);
 }
 
-export default NewCafeItem;   
+export default NewCafeItem;
